@@ -14,7 +14,7 @@ namespace PrjWinFormsAtividadesLogica
 
         private void textBoxReal_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -22,26 +22,34 @@ namespace PrjWinFormsAtividadesLogica
             decimal valorReal, resultado;
             valorReal = decimal.Parse(textBoxReal.Text);
 
-            if (decimal.TryParse(textBoxReal.Text, out decimal res) == false)
+            if (valorReal == Decimal.Zero)
             {
-                
-            }    
-            {
-
-            }
-            if (radioButtonEuro.Checked)
-            {
-                resultado = valorReal * 0.18m;
-
-                labelresultado.Text = $"Resultado Conversão - E$ {resultado.ToString("n2")}";
+                textBoxReal.Clear();
+                MessageBox.Show("Insira um número diferente de zero.", "Erro!");
+                textBoxReal.Focus();
             }
             else
             {
-                resultado = valorReal * 0.20m;
+                if (decimal.TryParse(textBoxReal.Text, out decimal res) == false)
+                {
 
-                labelresultado.Text = $"Resultado da Conversão - U$ {resultado.ToString("n2")}";
+                }
+                {
+
+                }
+                if (radioButtonEuro.Checked)
+                {
+                    resultado = valorReal * 0.18m;
+
+                    labelresultado.Text = $"Resultado Conversão - E$ {resultado.ToString("n2")}";
+                }
+                else
+                {
+                    resultado = valorReal * 0.20m;
+
+                    labelresultado.Text = $"Resultado da Conversão - U$ {resultado.ToString("n2")}";
+                }
             }
-
         }
 
         private void label1_Click(object sender, EventArgs e)

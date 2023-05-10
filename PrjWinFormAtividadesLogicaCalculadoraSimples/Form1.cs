@@ -14,7 +14,7 @@ namespace PrjWinFormAtividadesLogicaCalculadoraSimples
 
         private void buttonCalcular_Click(object sender, EventArgs e)
         {
-            decimal primeironumero, segundonumero, resultado, op;
+            decimal primeironumero, segundonumero, resultado = 0;
 
             primeironumero = decimal.Parse(textBoxNumero1.Text);
             segundonumero = decimal.Parse(textBoxNumero2.Text);
@@ -36,9 +36,20 @@ namespace PrjWinFormAtividadesLogicaCalculadoraSimples
             }
             else
             {
-                resultado = primeironumero / segundonumero;
-                textBoxResultado.Text = resultado.ToString();
+                if (segundonumero == 0)
+                {
+                    textBoxResultado.Clear();
+                    MessageBox.Show("Zero é indivisível!", "ERRO");
+                    textBoxNumero2.Clear();
+                    textBoxNumero2.Focus();
+                }
+                else
+                {
+                    resultado = primeironumero / segundonumero;
+                    textBoxResultado.Text = resultado.ToString();
+                }
             }
-        }
+        
     }
+}
 }
