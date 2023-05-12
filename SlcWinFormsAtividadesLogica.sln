@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrjWinFormsAtividadesLogica
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrjWinFormAtividadesLogicaCalculadoraSimples", "PrjWinFormAtividadesLogicaCalculadoraSimples\PrjWinFormAtividadesLogicaCalculadoraSimples.csproj", "{C653CAED-114C-4E5D-A80D-A1C65303A7E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrjWinFormsAtividadeNotas", "PrjWinFormsAtividadeNotas\PrjWinFormsAtividadeNotas.csproj", "{871F0D32-BF01-4F9B-A2A5-8BD1BEC062A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrjWinFormsAtividadeNotas", "PrjWinFormsAtividadeNotas\PrjWinFormsAtividadeNotas.csproj", "{871F0D32-BF01-4F9B-A2A5-8BD1BEC062A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrjAtividadeSalario", "PrjAtividadeSalario\PrjAtividadeSalario.csproj", "{8CA862AE-6FAC-42FD-A08E-0CA2F3B1AB77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{871F0D32-BF01-4F9B-A2A5-8BD1BEC062A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{871F0D32-BF01-4F9B-A2A5-8BD1BEC062A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{871F0D32-BF01-4F9B-A2A5-8BD1BEC062A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA862AE-6FAC-42FD-A08E-0CA2F3B1AB77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA862AE-6FAC-42FD-A08E-0CA2F3B1AB77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA862AE-6FAC-42FD-A08E-0CA2F3B1AB77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA862AE-6FAC-42FD-A08E-0CA2F3B1AB77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
