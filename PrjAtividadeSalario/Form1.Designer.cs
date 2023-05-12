@@ -49,10 +49,10 @@
             // 
             // txtBoxSalBruto
             // 
-            txtBoxSalBruto.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtBoxSalBruto.Font = new Font("Berlin Sans FB", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             txtBoxSalBruto.Location = new Point(338, 68);
             txtBoxSalBruto.Name = "txtBoxSalBruto";
-            txtBoxSalBruto.Size = new Size(219, 33);
+            txtBoxSalBruto.Size = new Size(219, 28);
             txtBoxSalBruto.TabIndex = 1;
             // 
             // checkBoxTransporte
@@ -101,7 +101,7 @@
             // txtBoxSalLiq
             // 
             txtBoxSalLiq.Font = new Font("Berlin Sans FB", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtBoxSalLiq.Location = new Point(303, 334);
+            txtBoxSalLiq.Location = new Point(294, 343);
             txtBoxSalLiq.Name = "txtBoxSalLiq";
             txtBoxSalLiq.Size = new Size(219, 28);
             txtBoxSalLiq.TabIndex = 6;
